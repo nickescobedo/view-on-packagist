@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>com.nickescobedo.view-on-packagist.View on Packagist</id>
+    <name>View On Packagist</name>
+    <vendor email="nick@nickescobedo.com" url="https://nickescobedo.com">Nick Escobedo</vendor>
+
+    <description><![CDATA[
+    Visit the packagist.org page for a composer package when right clicking on the composer package name in the composer.json file.
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.jetbrains.php</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="actions.ViewComposerPackage" class="actions.ViewComposerPackage" text="View on Packagist" icon="PhpIcons.Composer">
+            <add-to-group group-id="EditorPopupMenu" />
+        </action>
+    </actions>
+</idea-plugin>

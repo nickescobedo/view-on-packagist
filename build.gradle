@@ -1,0 +1,30 @@
+plugins {
+    id 'org.jetbrains.intellij' version '1.2.1'
+    id 'java'
+}
+
+group 'com.nickescobedo.composer-links'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version = '2021.2.3'
+    type = 'IU'
+    plugins = ['com.jetbrains.php:212.5457.49']
+}
+patchPluginXml {
+    changeNotes = """
+      Initial Release!"""
+}
+test {
+    useJUnitPlatform()
+}
