@@ -17,7 +17,7 @@
     </extensions>
 
     <actions>
-        <action id="actions.ViewComposerPackage" class="actions.ViewComposerPackage" text="View on Packagist" icon="PhpIcons.Composer">
+        <action id="actions.ViewComposerPackage" class="actions.ViewComposerPackage" text="View on Packagist" icon="icons/packagist-icon.png">
             <add-to-group group-id="EditorPopupMenu" />
         </action>
     </actions>
